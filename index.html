@@ -1,0 +1,20 @@
+<h1>Password Practice! </h1>
+
+<p> Please enter password to view the website:</p>
+<p> Password: <input id="passwordBox" type="password" />
+    <a href="http://www.beyonce.com" onclick="return confirmPassword();">
+        Click Here to Enter Website!
+</p>
+<script>
+    function confirmPassword() {
+        var password = document.getElementById("passwordBox");
+        var passwordText = password.value;
+        if (passwordText == "Kendra") {
+            return true;
+        } else {
+            alert("Access denied! Incorrect Password");
+            return false;
+        }
+    }
+
+</script>
